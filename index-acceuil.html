@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="sass/CSS/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Acceuil</title>
 </head>
 
-<body> <!-- Corp de la page-->
+<body>
+    <!-- Corp de la page-->
     <header>
-        <div>
-            <img src="" alt="" /> <!--Image logo -->
-            <input type="search" placeholder="Paris, Belleville"/> <!--Icone + Barre de recherche-->
+        <div class="ctncity">
+            <!--Image logo -->
+            <img class="ctncity__logo" src="images/logo/ohmyfood.png" alt="logo du site Ohmyfood" />
+
+            <!--Icone + Barre de recherche-->
+            <div class="ctncity__search">
+            <i class="material-icons">location_on</i><input type="search" placeholder="Paris, Belleville" />
+            </div>
         </div>
-        <article> <!--{ARTICLE} Réserver le menu-->
-            <h2></h2>
-            <p>Réservez le menu qui vous convient</p>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <i class="material-icons">location_on</i><input type="button" />
-        </article>
     </header>
-    <section><!--{SECTION} Fonctionnement & Restaurants -->
-        <nav>
-            <h2>Fonctionnement</h2>
-            <ul>
-                <li><i class="material-icons">smartphone</i>Choisissez un restaurant</li>
-                <li><i class="material-icons">menu</i>Composez votre menu</li>
-                <li><i class="material-icons">storefront</i>Dégustez au restaurant</li>
-            </ul>
-        </nav>
-        <article>
-            <h2>Restaurants</h2>
-            <div>
-                <p>Nouveau</p>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-            <div>
-                <p>Nouveau</p>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-        </article>
+    <section>
+        <!--{SECTION} Réserver le menu-->
+        <div class="container">
+        <h2 class="">Réservez le menu qui<br/>vous convient</h2>
+        <p class="">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <button class="container__btn container__btn--color">Explorer nos restaurants</button>
+        </div>
+    </section>
+    <nav>
+        <!-- {NAVIGATION} Fonctionnement -->
+        <h2>Fonctionnement</h2>
+        <ul class="ctnfonctionnement">
+            <li class="ctnfonctionnement__border"><mark>1</mark><i class="material-icons">smartphone</i>Choisissez un restaurant</li>
+            <li class="ctnfonctionnement__border"><mark>2</mark><i class="material-icons">menu</i>Composez votre menu</li>
+            <li class="ctnfonctionnement__border"><mark>3</mark><i class="material-icons">storefront</i>Dégustez au restaurant</li>
+        </ul>
+    </nav>
+    <section>
+        <!-- {SECTION} Restaurants -->
+
+        <h2>Restaurants</h2>
+        <div class="ctnrestaurants">
+            <img src="" alt="">
+            <p>Nouveau</p>
+            <p></p>
+            <p></p>
+        </div >
+        <div class="ctnrestaurants">
+            <img src="" alt="">
+            <p>Nouveau</p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="ctnrestaurants">
+            <img src="" alt="">
+            <p></p>
+            <p></p>
+        </div>
+        <div class="ctnrestaurants">
+            <img src="" alt="">
+            <p></p>
+            <p></p>
+        </div>
+
     </section>
 
-    <footer> <!--Pubs et mentions légales-->
+    <footer>
+        <!--Pubs et mentions légales-->
         <h4 class="police">Ohmyfood<h4>
-            <p><i class="material-icons">restaurant</i>Proposer un restaurant</p>
-            <p><i class="material-icons">volunteer_activism</i>Devenir partenaire</p>
-        <p></p>
-        <p></p>
+                <p><i class="material-icons">restaurant</i>Proposer un restaurant</p>
+                <p><i class="material-icons">volunteer_activism</i>Devenir partenaire</p>
+                <p></p>
+                <p></p>
     </footer>
 </body>
 

@@ -1,0 +1,15 @@
+//Mixins a utiliser seulement si il y a des paramètres spécifiques.
+@mixin marge-btn {
+    padding: 0.9rem 1rem;
+    margin: auto;
+    border:none;
+}
+
+@mixin box--shadow {
+    box-shadow:  2px 5px 11px #00000030;
+}
+
+@mixin padding-and-radius {
+    border-radius: 1.2rem;
+    padding:1.5rem;
+}

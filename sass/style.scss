@@ -1,0 +1,113 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
+html,body,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h3,h5,h6{font-size:100%;font-weight:normal}
+ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}
+table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+@import "_mixins.scss";
+
+@import "_placeholders.scss";
+
+@import "_variables.scss";
+
+@font-face {
+    font-family:'Shrikhand';
+    src: url('../../Police/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:'Roboto';
+    src: url('../../Police/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+body {
+    font-family: "Roboto","Cursive","sans-serif";
+}
+
+h4 {
+    background-color: #353535;
+    color: whitesmoke;
+}
+
+h2 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.53em;
+    font-weight: 900;
+  }
+
+p {
+    margin-block-start: 0;
+  }
+
+
+.ctncity{
+    
+    &__logo {
+        height: 2rem;
+        padding-left:7rem;
+        margin: 1rem auto;
+    }
+    &__search{
+        @include marge-btn;
+        @extend %flex-with-wrap;
+        padding-left: 8rem;
+        background-color:$fond-bold-color;
+        border-top-style:inset;
+        border-bottom-style:inset;
+        text-align: center;
+    }
+}
+input{
+    border:none;
+    background-color:$fond-bold-color;
+    font-weight: 700;
+}
+.container{
+    @extend %flex-column;
+    @extend %flex-center;
+    background-color: $fond-color;
+    margin:2rem 0rem;
+    height: 15rem;
+    text-align: center;
+    padding: 0rem 4.2rem;
+    &__btn{
+        @include marge-btn;
+        margin-block-end: 2rem;
+        border-radius: 2rem;
+        &--color{
+            background-image:linear-gradient($secondary-color,$primary-color);
+            color:$txt-fond-sombre;
+        }
+    }
+}
+
+.ctnfonctionnement{
+    @extend %flex-column;
+    max-width: 23rem;
+    margin: 0 auto;
+    position: relative;
+    &__border{
+        display: flex;
+        @extend %flex-start;
+        @include box--shadow;
+        @include padding-and-radius;
+        background-color: $fond-color;
+        margin-block-end: 1rem;
+    }
+}
+
+.material-icons{
+    margin-right:1rem;
+}
+
+mark {
+    background-color: $primary-color;
+    border:$primary-color;
+    color:$txt-fond-sombre;
+    position: absolute;
+    padding: 0.1rem 0.4rem;
+    border-radius: 50%;
+    transform: translate(-2.2rem, 0.1rem)
+}
+
+.police {
+    font-family: "Shrikhand";
+}

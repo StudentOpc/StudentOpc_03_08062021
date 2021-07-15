@@ -1,0 +1,22 @@
+// Placehorders a utiliser pour les variables sans paramètre.
+
+%flex-with-wrap{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+// Flex pour centrer l'élément
+%flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+//Flex qui vont avec column
+%flex-column{
+    display:flex;
+    flex-direction: column;
+}
+
+%flex-start{
+    align-items: center;
+}
