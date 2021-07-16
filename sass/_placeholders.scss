@@ -5,6 +5,11 @@
     flex-wrap: wrap;
 }
 
+%flex-with-nowrap{
+    display:flex;
+    flex-wrap: nowrap;
+}
+
 // Flex pour centrer l'élément
 %flex-center {
     align-items: center;
