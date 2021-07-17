@@ -16,6 +16,11 @@
     justify-content: center;
 }
 
+%flex-titles{
+    align-items: center;
+    justify-content: space-between;
+}
+
 //Flex qui vont avec column
 %flex-column{
     display:flex;
@@ -24,4 +29,10 @@
 
 %flex-start{
     align-items: center;
+}
+
+//Flex end
+%flex-end{
+    align-items: flex-end;
+    justify-content: space-between;
 }

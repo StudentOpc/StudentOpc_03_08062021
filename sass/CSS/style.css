@@ -5,7 +5,7 @@ html, body, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textar
   padding: 0;
 }
 
-h1, h5, h4, h6 {
+h1, h5, h6 {
   font-size: 100%;
   font-weight: normal;
 }
@@ -49,18 +49,33 @@ td, th {
   flex-wrap: wrap;
 }
 
+.ctntop {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .container {
   align-items: center;
   justify-content: center;
 }
 
-.ctnfonctionnement, .container {
+.ctntop {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.All, .ctnfonctionnement, .container, header {
   display: flex;
   flex-direction: column;
 }
 
 .ctnfonctionnement__border {
   align-items: center;
+}
+
+.ctnmenus {
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 @font-face {
@@ -82,6 +97,10 @@ a:link {
 
 a:visited {
   color: #12130f;
+}
+
+button {
+  cursor: pointer;
 }
 
 h2 {
@@ -112,17 +131,12 @@ input {
   font-weight: 700;
 }
 
-h3 {
-  margin-block-end: 0rem;
-}
-
 .ctnrestaurants--style {
   margin: 0.5rem;
 }
 
 .container {
   background-color: #f2f2f2ad;
-  margin: 2rem 0rem;
   height: 15rem;
   text-align: center;
   padding: 0rem 4.2rem;
@@ -161,6 +175,7 @@ h3 {
 
 .material-icons {
   padding-right: 1rem;
+  cursor: pointer;
 }
 
 mark {
@@ -211,6 +226,68 @@ mark {
 
 .police {
   font-family: "Shrikhand";
+}
+
+.police__modif {
+  font-weight: normal;
+}
+
+.All {
+  background-color: #fafafa;
+  margin-top: -1.5rem;
+}
+
+.ctnmenus {
+  display: flex;
+  background-color: white;
+  margin: 1rem;
+  box-shadow: 2px 5px 11px #00000030;
+  border-radius: 1.2rem;
+  padding: 0.8rem;
+}
+.ctnmenus__title--style {
+  margin-block-end: 0em;
+}
+
+.moveh3, .border__bottom--h3 {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  border-bottom: solid 2px #99E2D0;
+  padding-bottom: 0.3rem;
+  width: 3rem;
+}
+
+.ctntop__police {
+  font-family: "Shrikhand";
+}
+
+.ctntop {
+  background-color: #fafafa;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 1rem 1rem 0rem 1rem;
+  margin-top: -0.5rem;
+}
+.ctntop__police--modif {
+  font-size: 2em;
+  margin-block-start: 0.93rem;
+}
+
+.ctnheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ctnheader__logo {
+  height: 2rem;
+  padding-left: 4.9rem;
+  margin: 0.8rem 0;
+}
+
+.container__btn--modif {
+  padding: 0.9rem 2.7rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

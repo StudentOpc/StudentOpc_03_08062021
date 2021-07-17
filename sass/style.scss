@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); */
-html,body,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h4,h5,h6{margin:0;padding:0}h1,h5,h4,h6{font-size:100%;font-weight:normal}
+html,body,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h4,h5,h6{margin:0;padding:0}h1,h5,h6{font-size:100%;font-weight:normal}
 ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}
 table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
@@ -23,6 +23,9 @@ body {
     font-family: "Roboto","Cursive","sans-serif";
 }
 
+header {
+    @extend %flex-column;
+}
 a:link {
     text-decoration: none;
     color:$txt-fond-clair;
@@ -31,11 +34,9 @@ a:link {
 a:visited {
     color:$txt-fond-clair;
 }
-// h4 {
-//     background-color: #353535;
-//     color: whitesmoke;
-// }
-
+button{
+    cursor: pointer;
+}
 h2 {
     margin-block-start: 0.83em;
     margin-block-end: 0.53em;
@@ -44,7 +45,7 @@ h2 {
 
 
 .ctncity{
-    
+
     &__logo {
         height: 2rem;
         padding-left:7rem;
@@ -65,9 +66,6 @@ input{
     background-color:$fond-bold-color;
     font-weight: 700;
 }
-h3{
-    margin-block-end: 0rem;
-}
 
 .ctnrestaurants--style{
     margin: 0.5rem;
@@ -76,7 +74,6 @@ h3{
     @extend %flex-column;
     @extend %flex-center;
     background-color: $fond-color;
-    margin:2rem 0rem;
     height: 15rem;
     text-align: center;
     padding: 0rem 4.2rem;
@@ -113,6 +110,7 @@ h3{
 }
 .material-icons{
     padding-right: 1rem;
+    cursor:pointer;
 }
 
 mark {
@@ -135,7 +133,7 @@ mark {
     @include box--shadow;
     &__img{
         @include image-scale;
-        border-radius:1.3rem 1.3rem 0rem 0rem ;
+        border-radius:1.3rem 1.3rem 0rem 0rem;
     }
     &__title{
         display: flex;
@@ -160,5 +158,68 @@ mark {
 .police {
     font-family: "Shrikhand";
 }
+.police__modif{
+    font-weight: normal;
+}
 
 // Paramètres pour pages 2 3 4 5
+.All{
+    background-color: $fond-color-bis;
+    margin-top:-1.5rem;
+    @extend %flex-column;
+}
+
+
+.ctnmenus{
+  display: flex;
+  background-color: $fond-default-color;
+  margin: 1rem;
+  @include box--shadow;
+  @include dish;
+  @extend %flex-end;
+  &__title{
+      &--style{
+        margin-block-end: 0em;
+      }
+  }
+}
+.moveh3, .border__bottom--h3{
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+    border-bottom: solid 2px $tertiary-color;
+    padding-bottom: 0.3rem;
+    width: 3rem;
+}
+.ctntop__police{
+    font-family: "Shrikhand";
+}
+
+.ctntop{
+    background-color: $fond-color-bis;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 1rem 1rem 0rem 1rem;
+    @extend %flex-with-nowrap;
+    margin-top: -0.5rem;
+    @extend %flex-titles;
+    &__police--modif{
+        font-size: 2em;
+        margin-block-start: 0.93rem;
+    }
+}
+
+.ctnheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__logo{
+        height: 2rem;
+        padding-left: 4.9rem;
+        margin: 0.8rem 0;
+    }
+}
+.container__btn--modif{
+        padding:  0.9rem 2.7rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+}
