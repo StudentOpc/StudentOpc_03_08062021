@@ -5,63 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Acceuil</title>
+    <link rel="stylesheet" href="sass/CSS/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Le délice des sens</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="" alt="" />
-            <p></p>
-        </div>
-        <nav>
-            <h2></h2>
-            <p></p>
-            <input type="button" />
-        </nav>
-    </header>
-    <section>
-        <nav>
-            <h2></h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-        <article>
-            <h2></h2>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
+        <!-- En tête + image -->
+        <header class="ctnheader">
+                <img class="ctnheader__logo" src="images/logo/ohmyfood.png" alt="logo du site Ohmyfood" />
+        </header>
+            <img class="image" src="images/restaurants/Le_delice_des_sens.jpg" alt="Image du restaurant: Le délice des sens">
+            <!-- Présentation des plats & ingrédient -->
+            <section class="All">
+                <div class="ctntop">
+                <h2 class="ctntop__police ctntop__police--modif">À la française</h2>
+                <i class="material-icons">favorite_border</i>
+                </div>
+                <div class="gridfather">
+                <article class="gridchild">
+                    <h3 class="moveh3 border__bottom--h3">ENTRÉES</h3>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Tartare de thon</h4>
+                        <p class="ctnmenus__title--style">Assaisonné au yuzu</p>
+                        </div>
+                        <span>25€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4 >Bouchée de homard croustillant </h4>
+                        <p class="ctnmenus__title--style">Et sa farandole de petits légumes</p>
+                        </div>
+                        <span>35€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Velouté de cèpes </h4>
+                        <p class="ctnmenus__title--style">Aux truffes</p>
+                        </div>
+                        <span>20€</span>
+                    </div>
+                </article>
+                <article class="gridchild">
+                    <h3 class="moveh3 border__bottom--h3">PLATS</h3>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Poulet rôti aux herbes de Provence</h4>
+                        <p class="ctnmenus__title--style">Et sa crème de truffe</p>
+                        </div>
+                        <span>40€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Langouste rôtie</h4>
+                        <p class="ctnmenus__title--style">Et ses légumes de saison</p>
+                        </div>
+                        <span>35€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Côte de boeuf Angus</h4>
+                        <p class="ctnmenus__title--style">Et sa purée de panais</p>
+                        </div>
+                        <span>44€</span>
+                    </div>
+                </article>
+                <article class="gridchild">
+                    <h3 class="moveh3 border__bottom--h3">DESSERTS</h3>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Farandole de desserts</h4>
+                        <p class="ctnmenus__title--style">Du chef</p>
+                        </div>
+                        <span>18€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Fondant au chocolat</h4>
+                        <p class="ctnmenus__title--style">Revisité</p>
+                        </div>
+                        <span>22€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Crème brulée</h4>
+                        <p class="ctnmenus__title--style">Revisitée</p>
+                        </div>
+                        <span>23€</span>
+                    </div>
+                </article>
             </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-        </article>
-    </section>
-
-    <footer>
-        <img src="" alt="" />
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-    </footer>
+                <button class="container__btn container__btn--color container__btn--modif">Commander</button>
+            </section>
+        
+            <footer class="footer">
+                <!--Pubs et mentions légales-->
+                <h4 class="police police__modif">Ohmyfood</h4>
+                        <p><i class="material-icons">restaurant</i>Proposer un restaurant</p>
+                        <p><i class="material-icons">volunteer_activism</i>Devenir partenaire</p>
+                        <p>Mentions légales</p>
+                        <p>Contact</p>
+            </footer>
 
 </body>
 

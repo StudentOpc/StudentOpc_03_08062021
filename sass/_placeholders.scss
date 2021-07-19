@@ -27,6 +27,11 @@
     flex-direction: column;
 }
 
+%flex-row{
+
+    flex-direction: row;
+}
+
 %flex-start{
     align-items: center;
 }

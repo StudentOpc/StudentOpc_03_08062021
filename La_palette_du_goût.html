@@ -5,63 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <title>Acceuil</title>
+    <link rel="stylesheet" href="sass/CSS/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>La palette du goût</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="" alt="" />
-            <p></p>
-        </div>
-        <nav>
-            <h2></h2>
-            <p></p>
-            <input type="button" />
-        </nav>
-    </header>
-    <section>
-        <nav>
-            <h2></h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-        <article>
-            <h2></h2>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
+        <!-- En tête + image -->
+        <header class="ctnheader">
+                <img class="ctnheader__logo" src="images/logo/ohmyfood.png" alt="logo du site Ohmyfood" />
+        </header>
+            <img class="image image--position3" src="images/restaurants/La_palette_du_gout.jpg" alt="Image du restaurant: La palette du goût">
+            <!-- Présentation des plats & ingrédient -->
+            <section class="All">
+                <div class="ctntop">
+                <h2 class="ctntop__police ctntop__police--modif">La palette du goût</h2>
+                <i class="material-icons">favorite_border</i>
+                </div>
+                <div class="gridfather">
+                <article class="gridchild">
+                    <h3 class="moveh3 border__bottom--h3">ENTRÉES</h3>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Fricassée d'escargot</h4>
+                        <p class="ctnmenus__title--style">Au piment d'Espelette</p>
+                        </div>
+                        <span>25€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>
+                            Foie gras de canard mi-cuit</h4>
+                        <p class="ctnmenus__title--style">Et ses copeaux de truffe noire</p>
+                        </div>
+                        <span>35€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Oeuf au plat</h4>
+                        <p class="ctnmenus__title--style">Assaisonné à la truffe sur lit de caviar</p>
+                        </div>
+                        <span>20€</span>
+                    </div>
+                </article>
+                <article class="gridchild">
+                    <h3 class="moveh3 border__bottom--h3">PLATS</h3>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Filet de boeuf aux herbes</h4>
+                        <p class="ctnmenus__title--style">Accompagné de sa ribambelle de légumes</p>
+                        </div>
+                        <span>40€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Parmentier de queue de boeuf</h4>
+                        <p class="ctnmenus__title--style">À la truffe noire sur sa purée de panais</p>
+                        </div>
+                        <span>35€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Filet de turbot</h4>
+                        <p class="ctnmenus__title--style">Aux agrumes</p>
+                        </div>
+                        <span>44€</span>
+                    </div>
+                </article>
+                <article class="gridchild">
+                    <h3 class="moveh3 border__bottom--h3">DESSERTS</h3>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Paris-Brest</h4>
+                        <p class="ctnmenus__title--style">Revisité</p>
+                        </div>
+                        <span>18€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Macaron au chocolat d'exception </h4>
+                        <p class="ctnmenus__title--style">Et glace à la vanille de Madagascar</p>
+                        </div>
+                        <span>22€</span>
+                    </div>
+                    <div class="ctnmenus">
+                        <div class="ctnmenus__title">
+                        <h4>Mousse au chocolat </h4>
+                        <p class="ctnmenus__title--style">Au piment d'Espelette et à la truffe noire</p>
+                        </div>
+                        <span>23€</span>
+                    </div>
+                </article>
             </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-                <p></p>
-            </div>
-        </article>
-    </section>
-
-    <footer>
-        <img src="" alt="" />
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-    </footer>
+                <button class="container__btn container__btn--color container__btn--modif">Commander</button>
+            </section>
+        
+            <footer class="footer">
+                <!--Pubs et mentions légales-->
+                <h4 class="police police__modif">Ohmyfood</h4>
+                        <p><i class="material-icons">restaurant</i>Proposer un restaurant</p>
+                        <p><i class="material-icons">volunteer_activism</i>Devenir partenaire</p>
+                        <p>Mentions légales</p>
+                        <p>Contact</p>
+            </footer>
 
 </body>
 
