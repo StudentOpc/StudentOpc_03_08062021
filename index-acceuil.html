@@ -9,9 +9,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Acceuil</title>
 </head>
-
+<!-- Corp de la page-->
 <body>
-    <!-- Corp de la page-->
+    <!-- Loader de la page -->
+    <div class="loader">
+        <div>
+            <div class="loader__loading__icone lds-hourglass"></div>
+        </div>
+    </div>
     <header>
         <!--Image logo -->
         <div class="ctncity">
@@ -27,7 +32,7 @@
         <div class="container">
         <h2>Réservez le menu qui<br/>vous convient</h2>
         <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <button class="container__btn container__btn--color">Explorer nos restaurants</button>
+        <button class="container__btn container__btn--color --modif">Explorer nos restaurants</button>
         </div>
     </section>
     <nav>
@@ -44,7 +49,7 @@
 
         <h2>Restaurants</h2>
         <div class="grid">
-        <a href="La_palette_du_goût.html" class="ctnrestaurants">
+        <a href="La_palette_du_goût.html" class="ctnrestaurants --modif">
             <img class="ctnrestaurants__img" src="images/restaurants/La_palette_du_gout.jpg" alt="Image du restaurant: La palette du goût">
             <strong class="ctnrestaurants__fresh">Nouveau</strong>
         <div class="ctnrestaurants__title">
@@ -52,10 +57,16 @@
                 <h3 class="ctnrestaurants--style">La palette du goût</h3>
                 <p class="ctnrestaurants--style">Ménilmontant</p>
             </div>
-                <i class="material-icons">favorite_border</i>
+            <div class="ctnrestaurants--heart">
+                <i class="material-icons material-icons--empty heart-clip">favorite_border</i>
+                <i class="material-icons material-icons--style heart-clip">favorite_border</i>
+                <i class="material-icons material-icons--style2 heart-clip">favorite_border</i>
+                <i class="material-icons material-icons--full heart-clip">favorite_border</i>
+                <!-- <div class="lds-heart"><div></div></div> -->
+            </div>
         </div>
         </a>
-        <a href="La_note_enchantee.html" class="ctnrestaurants">
+        <a href="La_note_enchantee.html" class="ctnrestaurants --modif">
             <img class="ctnrestaurants__img" src="images/restaurants/La_note_enchantée.jpg" alt="Image du restaurant: La note enchantée">
             <strong class="ctnrestaurants__fresh">Nouveau</strong>
             <div class="ctnrestaurants__title">
@@ -63,27 +74,27 @@
                 <h3 class="ctnrestaurants--style">La note enchantée</h3>
                 <p class="ctnrestaurants--style">Charonne</p>
             </div>
-            <i class="material-icons">favorite_border</i>
+            <i class="material-icons material-icons--style">favorite_border</i>
             </div>
         </a>
-        <a href="A_la_française.html" class="ctnrestaurants">
+        <a href="A_la_française.html" class="ctnrestaurants --modif">
             <img class="ctnrestaurants__img" src="images/restaurants/A_la_française.jpg" alt="Image du restaurant: À la française">
             <div class="ctnrestaurants__title">
             <div>
                 <h3 class="ctnrestaurants--style">À la française</h3>
                 <p class="ctnrestaurants--style">Cité Rouge</p>
             </div>
-            <i class="material-icons">favorite_border</i>
+            <i class="material-icons material-icons--style">favorite_border</i>
             </div>
         </a>
-        <a href="Le_délice_des_sens.html" class="ctnrestaurants">
+        <a href="Le_délice_des_sens.html" class="ctnrestaurants --modif">
             <img class="ctnrestaurants__img" src="images/restaurants/Le_delice_des_sens.jpg" alt="Image du restaurant: Le délice des sens">
             <div class="ctnrestaurants__title">
             <div>
                 <h3 class="ctnrestaurants--style">Le délice des sens</h3>
                 <p class="ctnrestaurants--style">Folie-Méricourt</p>
             </div>
-            <i class="material-icons">favorite_border</i>
+            <i class="material-icons material-icons--style">favorite_border</i>
             </div>
         </a>
     </div>
@@ -92,10 +103,10 @@
     <footer class="footer">
         <!--Pubs et mentions légales-->
         <h4 class="police">Ohmyfood</h4>
-                <p><i class="material-icons">restaurant</i>Proposer un restaurant</p>
-                <p><i class="material-icons">volunteer_activism</i>Devenir partenaire</p>
+                <p><i class="material-icons style--icons">restaurant</i>Proposer un restaurant</p>
+                <p><i class="material-icons style--icons">volunteer_activism</i>Devenir partenaire</p>
                 <p>Mentions légales</p>
-                <p>Contact</p>
+                <a href="mailto:contact@ohmyfood.com">Contact</a>
     </footer>
 </body>
 

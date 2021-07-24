@@ -3,6 +3,7 @@
 // Couleurs Principales
 $primary-color:#9356DC;
 $secondary-color:#FF79DA;
+$secondary-color-bis:#ff79d98a;
 $tertiary-color:#99E2D0;
 $tertiary-color-bis:#006d52;
 
@@ -23,5 +24,10 @@ $radius-btn:10px;
 $radius-new:0.3rem;
 $none-marge:0rem;
 
+//Dégrader de couleur pour les coeur
+$degrader: linear-gradient(0deg, $primary-color, $secondary-color);
 //Media queries
 $media-desktop-and-tablette: "only screen and (min-width: 1024px)";
+
+/* Cubic-Bezier */
+$cubic: cubic-bezier(0.28, 0.57, 0.32, 0.82) 1s;
