@@ -110,17 +110,41 @@ h2 {
 
 /* Animation du coeur*/
 .material-icons--empty {
-  position: absolute;
-  font-size: 32px !important;
-  right: 0%;
-  z-index: 4;
-  background-color: white;
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
 }
 .material-icons--empty:hover {
-  transform: scaleY(0);
-  transition: transform 1s;
-  transform-origin: center top;
+  color: transparent;
 }
+.material-icons--empty:hover > .fullHeart {
+  transform: scale(1);
+}
+
+.emptyHeart {
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
+}
+.emptyHeart:hover {
+  color: transparent;
+}
+.emptyHeart:hover > .fullHeart {
+  transform: scale(1);
+}
+
+.fullHeart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 150ms 50ms ease-in-out;
+}
+
 .material-icons--style {
   position: absolute;
   z-index: 3;
@@ -366,22 +390,34 @@ mark {
   box-shadow: 2px 5px 11px #00000030;
   border-radius: 1.2rem;
   transition-duration: 0.5s;
+  max-height: 5rem;
+}
+.ctnmenus:hover {
+  white-space: nowrap;
 }
 .ctnmenus__title {
   padding: 0.8rem;
   flex: 4;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 .ctnmenus__title--style {
   margin-block-end: 0rem;
+  white-space: nowrap;
 }
 .ctnmenus__checked {
   display: flex;
   height: 5rem;
   background-color: transparent;
   border-radius: 0rem 1rem 1rem 0rem;
+}
+.ctnmenus__checked:hover {
+  height: 100%;
+}
+
+h4:hover, p:hover {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .ctnmenus:hover .ctnmenus__checked {
