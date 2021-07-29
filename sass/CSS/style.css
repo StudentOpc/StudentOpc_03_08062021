@@ -132,6 +132,7 @@ h2 {
   cursor: pointer;
   position: relative;
   transition: color 150ms 50ms ease;
+  padding-right: 1rem;
 }
 .emptyHeart:hover {
   color: transparent;
@@ -145,34 +146,10 @@ h2 {
   top: 0;
   left: 0;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(0);
-  transition: transform 150ms 50ms ease-in-out;
-}
-
-.material-icons--style {
-  position: absolute;
-  z-index: 3;
-  right: 0%;
-  font-size: 32px !important;
-  background: white;
-  text-decoration-color: linear-gradient(0deg, #9356DC, #FF79DA);
-  transition: transform 1s;
-}
-
-.material-icons--style2 {
-  position: absolute;
-  z-index: 2;
-  right: 0%;
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
-  font-size: 32px !important;
-}
-
-.material-icons--full {
-  position: absolute;
-  right: 0%;
-  font-size: 32px !important;
-  z-index: 1;
+  transition: transform 250ms 50ms ease-in-out;
 }
 
 /* Animation du Loader */

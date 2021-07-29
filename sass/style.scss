@@ -60,6 +60,7 @@ h2 {
     cursor: pointer;
     position: relative;
     transition: color 150ms 50ms ease;
+    @include padd;
     &:hover{
         color: transparent;
     }
@@ -72,33 +73,34 @@ h2 {
     top: 0;
     left: 0;
     background: linear-gradient(170deg, $secondary-color, $primary-color);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(0);
-    transition: transform 150ms 50ms ease-in-out;
+    transition: transform 250ms 50ms ease-in-out;
 }
 
-.material-icons--style{
-    position: absolute;
-    z-index: 3;
-    right: 0%;
-    font-size: 32px !important;
-    background: rgb(255, 255, 255);
-    text-decoration-color: $degrader;
-    transition: transform 1s;
-}
-.material-icons--style2{
-    position: absolute;
-    z-index: 2;
-    right: 0%;
-    background: $degrader;
-    font-size: 32px !important;
-}
-.material-icons--full{
-    position: absolute;
-    right:0%;
-    font-size: 32px !important;
-    z-index: 1;
-}
+// .material-icons--style{
+//     position: absolute;
+//     z-index: 3;
+//     right: 0%;
+//     font-size: 32px !important;
+//     background: rgb(255, 255, 255);
+//     text-decoration-color: $degrader;
+//     transition: transform 1s;
+// }
+// .material-icons--style2{
+//     position: absolute;
+//     z-index: 2;
+//     right: 0%;
+//     background: $degrader;
+//     font-size: 32px !important;
+// }
+// .material-icons--full{
+//     position: absolute;
+//     right:0%;
+//     font-size: 32px !important;
+//     z-index: 1;
+// }
 /* Animation du Loader */
 .loader{
     position: fixed;
