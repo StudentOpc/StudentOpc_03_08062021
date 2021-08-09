@@ -283,6 +283,7 @@ input {
   border-radius: 1.2rem;
   padding: 1.5rem;
   background-color: #f2f2f2ad;
+  cursor: pointer;
   margin-block-end: 1rem;
 }
 
@@ -375,6 +376,10 @@ mark {
 .ctnmenus__title {
   padding: 0.8rem;
   flex: 4;
+}
+.ctnmenus__title:hover {
+  white-space: nowrap;
+  padding: 0.8rem;
 }
 .ctnmenus__title--style {
   margin-block-end: 0%;
@@ -684,6 +689,18 @@ span {
   .container__btn--modif {
     padding: 1.3rem 5rem;
     margin-bottom: 6rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .lds-hourglass {
+    right: 39%;
+    top: 32%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .lds-hourglass {
+    right: 41%;
+    top: 25%;
   }
 }
 

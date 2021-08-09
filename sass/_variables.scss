@@ -25,7 +25,7 @@ $radius-new:0.3rem;
 $none-marge:0rem;
 
 //Dégrader de couleur pour les coeur
-$degrader: linear-gradient(0deg, $primary-color, $secondary-color);
+$degrader: linear-gradient(170deg, $secondary-color, $primary-color);
 //Media queries
 $media-desktop-and-tablette: "only screen and (min-width: 1024px)";
 /* Cubic-Bezier */
